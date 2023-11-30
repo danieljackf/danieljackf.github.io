@@ -17,7 +17,7 @@
     top: 100px;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1; /* Set a lower z-index for the text */
+    z-index: 1;
   }
   
   h1 {
@@ -41,7 +41,6 @@
 	padding: 100px 0;
 }
 
-/*Time to finalise the cloud shape*/
 .cloud {
 	width: 200px; height: 60px;
 	background: #fff;
@@ -74,7 +73,6 @@
 	top: -55px; left: auto; right: 15px;
 }
 
-/*Time to animate*/
 .x1 {
     -webkit-animation: moveclouds 150s linear infinite;
 	-moz-animation: moveclouds 150s linear infinite;
@@ -82,17 +80,14 @@
 	opacity: 0.6;
 }
 
-/*variable speed, opacity, and position of clouds for realistic effect*/
 .x2 {
 	left: 200px; 
 	
 	-webkit-transform: scale(1.2);
 	-moz-transform: scale(1.2);
 	transform: scale(1.2);
-	opacity: 0.3; /*opacity proportional to the size*/
-	
-	/*Speed will also be proportional to the size and opacity*/
-	/*More the speed. Less the time in 's' = seconds*/
+	opacity: 0.3; 
+
 	-webkit-animation: moveclouds 100s linear infinite;
 	-moz-animation: moveclouds 100s linear infinite;
 	-o-animation: moveclouds 100s linear infinite;
@@ -104,7 +99,7 @@
 	-webkit-transform: scale(1.6);
 	-moz-transform: scale(1.6);
 	transform: scale(1.6);
-	opacity: 0.45; /*opacity proportional to the size*/
+	opacity: 0.45; 
 	
 	-webkit-animation: moveclouds 125s linear infinite;
 	-moz-animation: moveclouds 125s linear infinite;
@@ -117,7 +112,7 @@
 	-webkit-transform: scale(1.5);
 	-moz-transform: scale(1.5);
 	transform: scale(1.5);
-	opacity: 0.3; /*opacity proportional to the size*/
+	opacity: 0.3; 
 	
 	-webkit-animation: moveclouds 170s linear infinite;
 	-moz-animation: moveclouds 170s linear infinite;
@@ -130,7 +125,7 @@
 	-webkit-transform: scale(1.6);
 	-moz-transform: scale(1.6);
 	transform: scale(1.6);
-	opacity: 0.35; /*opacity proportional to the size*/
+	opacity: 0.35; 
 	
 	-webkit-animation: moveclouds 90s linear infinite;
 	-moz-animation: moveclouds 90s linear infinite;
