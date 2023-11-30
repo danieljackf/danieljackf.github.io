@@ -77,9 +77,9 @@
 
 /*Time to animate*/
 .x1 {
-    -webkit-animation: moveclouds 60s linear infinite;
-	-moz-animation: moveclouds 60s linear infinite;
-	-o-animation: moveclouds 60s linear infinite;
+    -webkit-animation: moveclouds 50s linear infinite;
+	-moz-animation: moveclouds 50s linear infinite;
+	-o-animation: moveclouds 50s linear infinite;
 	opacity: 0.6;
 }
 
