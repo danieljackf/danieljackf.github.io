@@ -58,6 +58,11 @@ a {
 }
 
 #clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
     padding: 100px 0;
 }
 
@@ -218,16 +223,18 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 40px auto;
-    height: 300px;
+    margin: 5% auto;
+    height: auto;
     max-width: 80%;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.3);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    backdrop-filter: blur(10px); /* Adds the blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    padding: 2%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .project:nth-child(even) {
@@ -235,20 +242,21 @@ a {
 }
 
 .project iframe {
-    max-width: 60%;
-    height: 80%;
+    max-width: 100%;
+    height: 240px;
     object-fit: cover;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
 }
 
 .project .description {
-    padding: 20px;
-    max-width: 50%;
-    height: 100%;
+    padding: 2%;
+    max-width: 100%;
+    flex: 1 1 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 .project img {
@@ -274,4 +282,15 @@ a {
 .button:hover {
     background-color: #0056b3;
     border-color: #0056b3;
+}
+
+.project h3 {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: rgb(255, 255, 255);
+}
+
+.project p {
+    font-size: clamp(0.8rem, 1.8vw, 1rem);
+    color: rgb(255, 255, 255);
+    word-wrap: break-word;
 }
