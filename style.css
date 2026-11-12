@@ -5,54 +5,31 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-image: url("background_image.jpg");
+    background: url("background_image.jpg") center fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
     min-height: 90vh;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
 }
 
 .container {
     text-align: center;
     position: relative;
-    margin-top: 20px;
+    margin: 20px auto;
     z-index: 1;
     padding: 20px;
     max-width: 60%;
-    margin: 20px auto;
 }
 
-h1 {
+h1, h2, h3, h4 {
     margin-bottom: 10px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
-
-h2 {
-    color: rgb(255, 255, 255);
-    margin-bottom: 10px;
-}
-
-h3 {
-    color: rgb(255, 255, 255);
-}
-
-h4 {
-    color: rgb(255, 255, 255);
 }
 
 p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: rgb(255, 255, 255);
+    margin: 10px 0;
 }
 
 a {
-    color: rgb(255, 255, 255);
     display: block;
     margin-bottom: 10px;
 }
@@ -71,8 +48,6 @@ a {
     height: 60px;
     background: #fff;
     border-radius: 200px;
-    -moz-border-radius: 200px;
-    -webkit-border-radius: 200px;
     position: relative;
 }
 
@@ -83,15 +58,10 @@ a {
     background: #fff;
     width: 100px;
     height: 80px;
-    position: absolute;
     top: -15px;
     left: 10px;
     border-radius: 100px;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -webkit-transform: rotate(30deg);
     transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
 }
 
 .cloud:after {
@@ -103,21 +73,15 @@ a {
 }
 
 .x1 {
-    -webkit-animation: moveclouds 150s linear infinite;
-    -moz-animation: moveclouds 150s linear infinite;
-    -o-animation: moveclouds 150s linear infinite;
+    animation: moveclouds 150s linear infinite;
     opacity: 0.6;
 }
 
 .x2 {
     left: 200px;
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
     transform: scale(1.2);
     opacity: 0.3;
-    -webkit-animation: moveclouds 100s linear infinite;
-    -moz-animation: moveclouds 100s linear infinite;
-    -o-animation: moveclouds 100s linear infinite;
+    animation: moveclouds 100s linear infinite;
 }
 
 .x3 {
