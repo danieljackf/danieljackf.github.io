@@ -3,76 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
+  <meta name="description" content="Selected software, 3D, and self-hosting projects by Daniel Flynn.">
+  <title>Projects | Daniel Flynn</title>
   <link rel="icon" type="image/x-icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div id="clouds">
-    <div class="cloud x1"></div>
-    <div class="cloud x2"></div>
-    <div class="cloud x3"></div>
-    <div class="cloud x4"></div>
-    <div class="cloud x5"></div>
-    <div class="cloud x6"></div>
-    <div class="cloud x7"></div>
-    <div class="cloud x8"></div>
-  </div>
-  <div class="container">
-    <h1>Projects</h1>
-    <a href="index.html">Home</a>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="wordmark" href="index.html"><span class="wordmark-mark">DF</span><span>Daniel Flynn</span></a>
+      <nav class="nav-links" aria-label="Main navigation"><a href="index.html">About</a><a class="active" href="projects.html">Projects <span class="nav-arrow">-></span></a></nav>
+      <a class="availability" href="mailto:danieljackf@gmail.com"><span class="pulse"></span> Available for work</a>
+    </header>
 
-    <div class="project">
-      <img src="Autolab2.png" alt="AutoLab Admin screenshot">
-      <div class="description">
-        <h3>AutoLab</h3>
-        <p>
-          A self-hosted system for launching VS Code instances from one public entrypoint.
-          It combines a static frontend, FastAPI backend, Docker orchestration, Traefik routing,
-          and Tailscale remote access so the portal, API, and generated instances all stay on the same origin.
-        </p>
-        <a href="https://github.com/danieljackf/AutoLab" target="_blank" class="button">View on GitHub</a>
-      </div>
-    </div>
-    
-    <div class="project">
-      <img src="AR_Rubiks_Cube.gif" alt="Project 2 Image">
-      <div class="description">
-        <h3>AR Rubik's Cube</h3>
-        <p>As part of my Team Software Project Module at University College Cork we created an AR Rubik's Cube Webapp.
-          This involved creating a 3D model of the Rubik's Cube in Blender and the animations for it.
-          We used React for the front-end and Node.js for the back-end.
-          We used Three.js to render the 3D model in the browser and allow the user to interact with it.
-        </p>
-        <a href="https://github.com/mohamad03aldawamnah/rubik-s-cube-AR" target="_blank" class="button">View on GitHub</a>
-      </div>
-    </div>
+    <main class="projects-main">
+      <section class="page-heading reveal"><p class="eyebrow"><span class="eyebrow-line"></span> Selected work / 2022—now</p><h1>A few things<br><em>I've built.</em></h1><p>Some polished, some experimental, all made to answer a real question.</p></section>
+      <div class="filter-bar reveal" role="toolbar" aria-label="Filter projects"><span class="filter-label">Filter by</span><button class="filter-button active" data-filter="all">All <span>04</span></button><button class="filter-button" data-filter="software">Software <span>02</span></button><button class="filter-button" data-filter="3d">3D / XR <span>02</span></button><button class="filter-button" data-filter="systems">Systems <span>02</span></button></div>
 
-    <div class="project">
-      <iframe width="400" height="240" src="https://youtube.com/embed/bx_Lly4kI-0"></iframe>
-      <div class="description">
-        <h3>Fastnet Lighthouse 3Ds Max</h3>
-        <p>As part of my Games Modelling Design Module at the University of Limerick I created a 3D model of Fastnet Lighthouse.
-          This involved creating a 3D model of the lighthouse, applying textures to it and running fluid simulations to create the water around it.
-          I also created a series of animations to show the lighthouse in different lighting conditions.
-        </p>
-      </div>
-    </div>
-
-    <div class="project">
-      <img src="Home_Lab.png" alt="Home Lab">
-      <div class="description">
-        <h3>Home Lab</h3>
-        <p>
-          After my Google account storage ran out I decided it was time to find a better solution for my file storage needs.
-          I decided to build my own self hosted alternatives using an old Dell Optiplex.
-          I run Syncthing Server to sync my notes between all my devices.
-          I use Immich to store and view my photos and videos instead of Google Photos and I use Jellyfin to stream my media files to all my devices.
-          I also use it as an automatic backup for all my important files on my desktop and laptop.
-          I used a Tailscale reverse proxy to make all these services available on a single domain with SSL.
-        </p>
-      </div>
-    </div>
+      <section class="project-list" aria-label="Projects">
+        <article class="project project-feature reveal" data-category="software systems"><div class="project-visual image-visual"><img src="Autolab2.png" alt="AutoLab admin dashboard screenshot"><span class="visual-label">01 / 04</span></div><div class="project-body"><p class="project-type">Software + infrastructure</p><h2>AutoLab</h2><p>A self-hosted system for launching VS Code instances from one public entrypoint. A practical exercise in making distributed services feel like one calm, coherent product.</p><div class="tech-tags"><span>FastAPI</span><span>Docker</span><span>Traefik</span><span>Tailscale</span></div><a class="project-link" href="https://github.com/danieljackf/AutoLab" target="_blank" rel="noreferrer">View repository <span>↗</span></a></div></article>
+        <article class="project reveal" data-category="3d software"><div class="project-visual image-visual"><img src="AR_Rubiks_Cube.gif" alt="Animated AR Rubik's Cube"><span class="visual-label">02 / 04</span></div><div class="project-body"><p class="project-type">Team project / 3D + web</p><h2>AR Rubik's Cube</h2><p>An interactive web experience built around a Blender model, real-time animation, and the satisfying challenge of a physical puzzle.</p><div class="tech-tags"><span>React</span><span>Three.js</span><span>Node.js</span></div><a class="project-link" href="https://github.com/mohamad03aldawamnah/rubik-s-cube-AR" target="_blank" rel="noreferrer">View repository <span>↗</span></a></div></article>
+        <article class="project reveal" data-category="3d"><div class="project-visual video-visual"><iframe src="https://www.youtube.com/embed/bx_Lly4kI-0" title="Fastnet Lighthouse 3D project video" loading="lazy" allowfullscreen></iframe><span class="visual-label">03 / 04</span></div><div class="project-body"><p class="project-type">Digital modelling</p><h2>Fastnet Lighthouse</h2><p>A 3ds Max study of the iconic lighthouse, including textured modelling, water simulation, and a series of changing light conditions.</p><div class="tech-tags"><span>3ds Max</span><span>Modelling</span><span>Simulation</span></div></div></article>
+        <article class="project reveal" data-category="systems"><div class="project-visual image-visual"><img src="Home_Lab.png" alt="Home lab server setup"><span class="visual-label">04 / 04</span></div><div class="project-body"><p class="project-type">Personal infrastructure</p><h2>Home Lab</h2><p>A small, self-hosted alternative to the cloud: synced notes, private photos, media streaming, and automated backups running on repurposed hardware.</p><div class="tech-tags"><span>Syncthing</span><span>Immich</span><span>Jellyfin</span><span>Linux</span></div></div></article>
+      </section>
+    </main>
+    <footer class="footer"><span>© 2026 Daniel Flynn</span><div><a href="index.html">Back home <span>↗</span></a><a href="mailto:danieljackf@gmail.com">Email me <span>↗</span></a></div></footer>
   </div>
 </body>
 </html>
